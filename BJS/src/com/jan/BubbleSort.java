@@ -1,0 +1,36 @@
+package com.jan;
+
+import java.util.Scanner;
+
+public class BubbleSort {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the size of Array");
+		int n=sc.nextInt();
+		int ar[]=new int[n];
+		System.out.println("Enter element of Array");
+		for (int i = 0; i <n; i++) {
+			ar[i]=sc.nextInt();
+		}
+		System.out.println("Bubble sort algo");
+		for (int i = 0; i <n; i++) {
+			for (int j = 0; j <(n-i-1); j++) {
+				if (ar[j]>ar[j+1]) {
+					int temp=ar[j];
+					ar[j]=ar[j+1];
+					ar[j+1]=temp;
+				}
+			}
+
+		}
+		
+
+		for (int i = 0; i <n; i++) {
+			System.out.print(ar[i]+" ");
+
+		}
+
+	}
+
+}
