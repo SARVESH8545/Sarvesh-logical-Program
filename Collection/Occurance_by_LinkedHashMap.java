@@ -1,0 +1,21 @@
+import java.util.*;
+class Occurance_by_LinkedHashMap
+{
+	public static void main(String[] args) 
+	{
+		LinkedHashMap m=new LinkedHashMap();
+		m.put('b',1);
+		m.put('a',3);
+		m.put('n',2);
+		m.put('s',1);
+		Set k=m.keySet();
+		Collection v=m.values();
+		ArrayList kl=new ArrayList(k);
+		ArrayList vl=new ArrayList(v);
+		System.out.println(kl);
+		System.out.println(vl);
+		for(int i=0;i<m.size();i++){
+		System.out.println(kl.get(i)+"  has repeated for : "+vl.get(i)+"Times");
+		}
+	}
+}
